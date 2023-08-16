@@ -1,0 +1,7 @@
+functions: [draft4]
+rules:
+  my-rule:
+    message: "{{error}}"
+    given: "$"
+    then:
+      function: "draft4"
