@@ -11,7 +11,7 @@
             "name": "Apache 2.0",
             "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
         },
-        "version": "1.0.15"
+        "version": "1.0.17"
     },
     "externalDocs": {
         "description": "Find out more about Swagger",
@@ -19,7 +19,7 @@
     },
     "servers": [
         {
-            "url": "https://petstore3.swagger.io"
+            "url": "/api/v3"
         }
     ],
     "tags": [
