@@ -15,10 +15,10 @@ you an submit. These limitations are:
   * Rulesets are limited to JSON and YAML files.
 - Amplify ruleset cannot "extend" another Amplify ruleset.
 - Amplify ruleset cannot reference another file via an "unapproved" URL.
-  * For security reasons, Amplify blocks all URLs except for what's on our "approved" URL list.
+  * For security reasons, Amplify blocks all URLs except for what's on its "approved" URL list.
   * Raw file access to this "Amplify Extension" repository's main branch is on the "approved" list.
 
-This "Amplify Extension" repository allows you to bypass these limitations.
+This "Amplify Extension" repository allows you to bypass most of these limitations.
 
 ## Amplify Extension Restrictions
 
@@ -44,7 +44,7 @@ spectral lint --ruleset example.yaml ./tests/openapi-v2.yaml
 ## Access Custom Ruleset in Amplify
 
 To use a custom ruleset in this repository in Amplify, you'll need to create a separate ruleset file
-which "links" to it as shown below. You'll need to replae `<your-repo-name>` with the name of this repository
+which "links" to it as shown below. You'll need to replace `<your-repo-name>` with the name of this repository
 and the `example.yaml` file name with the one you want to use in Amplify.
 _(Tip: In GitHub, click on a file and then click the "Raw" button to get the raw file URL to use.)_
 
