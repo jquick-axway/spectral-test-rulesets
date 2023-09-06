@@ -1,0 +1,11 @@
+functions:
+  - license-apache
+rules:
+  my-license-rule:
+    description: The license must be set and assigned the Apache license.
+    message: "{{error}}"
+    severity: error
+    formats: ['aas2', 'oas2', 'oas3']
+    given: $.info.license.name
+    then:
+      function: license-apache

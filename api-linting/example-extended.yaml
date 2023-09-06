@@ -1,0 +1,13 @@
+extends:
+  - example.yaml
+functions:
+  - uppercase-title
+rules:
+  my-uppercase-title-rule:
+    description: All words in title must start with uppercase letters.
+    message: "{{error}}"
+    severity: warn
+    formats: ['aas2', 'oas2', 'oas3']
+    given: $.info.title
+    then:
+      function: uppercase-title
